@@ -45,3 +45,7 @@ keymap("n", "<leader>w", ":lua vim.wo.wrap = not vim.wo.wrap<CR>", opts)
 
 
 vim.api.nvim_set_keymap('t', '<C-;>', '<C-\\><C-n>', opts)
+
+vim.keymap.set("n", "<leader>fn", [[:let @+=expand("%:.")<CR>]])
+
+
